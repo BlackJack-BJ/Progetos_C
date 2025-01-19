@@ -7,10 +7,9 @@ int main(int argc, char *argv[])
 {
   setlocale(LC_ALL, "Portuguese");
   
-  int i, j;
-  bool fraca = false;
+  int i, j; fraca = 0; //Para bool's tem que incluir a <stdbool.h> e o meu ambiente não tem
   char senha[50], conteudo;
-  char senhas_comuns = ['123456', 'password', '123456789', '12345678', '12345', '1234567', 'admin', 'qwerty', 'abc123', 'password1', '123123', 'iloveyou', 'welcome', 'monkey', 'football', 'letmein', 'dragon', 'princess', 'sunshine', '123qwe', 'baseball', 'superman', 'batman', 'master', 'trustno1'];
+  char *senhas_comuns[] = ["123456", "password", "123456789", "12345678", "12345", "1234567", "admin", "qwerty", "abc123", "password1", "123123", "iloveyou", "welcome", "monkey", "football", "letmein", "dragon", "princess", "sunshine", "123qwe", "baseball", "superman", "batman", "master", "trustno1"];
 
   char localizacao = "/data/data/com.termux/files/home/C_No_Termux/Lista_de_Senhas";
 
